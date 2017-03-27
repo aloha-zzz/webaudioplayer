@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/player.css">
+	<script src="js\player.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="left">
+		<ul>
+			<li><a href="javascript:loadSoundFile(0)">What Are Words——Chris Medina</a></li>
+			<li><a href="javascript:loadSoundFile(1)">Love Yourself——Justin Bieber</a></li>
+			<li><a href="javascript:loadSoundFile(2)">Counting Stars——OneRepulic</a></li>
+			<li><a href="javascript:loadSoundFile(3)">The promise——Secret Garden</a></li>
+		</ul>
+	</div>
+	<div class="right">
+		<h2>歌词</h2>
+	</div>
+	<div class="bottom">
+		<button onclick="pre()">上一首</button>
+		<!-- <button id="stop" onclick="pause()">暂停</button>
+		<button onclick="play()">继续</button> -->
+		<input type="button" value="继续" id="play" onclick="play()">
+		<input type="button" value="暂停" id="pause" onclick="pause()">
+		<button onclick="next()">下一首</button>
+		<p>
+			进度条<input type="range" id="schedule" onchange="changeSchedule()" min="0" value="0" max="1000" >
+		</p>
+		<p>
+			Volume<input id="volume" onchange="changeVolume()" type="range" min="0" max="100" value="50">
+		</p>
+	</div>
+
+</div>
+</body>
+</html>
